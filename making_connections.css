@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dosis;
+    font-size: 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.other_users {
+    width: 50px;
+}
+
+.icon {
+    width: 20px;
+}
+
+#accept img, #accept2 img {
+    width: 50px;
+}
+
+header {
+    color: white;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 100px;
+}
+
+.left_nav {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: space-evenly;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+#profile {
+    font-size: 40px;
+}
+
+#my_profile {
+    font-size: large;
+}
+
+#out {
+    padding: 5px 10px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: larger;
+}
+
+main {
+    padding: 20px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.left {
+    flex: 2;
+    margin-right: 40px;
+}
+
+.right {
+    flex: 1;
+}
+
+.user {
+    margin-bottom: 20px;
+}
+
+.top_user {
+    flex: 2;
+    height: 100px;
+    background-color: lightseagreen;
+    position: relative;
+}
+
+#the_user {
+    width: 125px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 5px lightgrey;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.bottom_user {
+    flex: 2;
+    height: 270px;
+    border-left: 5px solid lightgrey;
+    border-right: 5px solid lightgrey;
+    border-bottom: 5px solid lightgrey;
+    padding: 60px 0px 10px 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+    margin: 10px 0px 10px;
+}
+
+.location p {
+    font-size: 25px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    width: 110px;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: cornflowerblue;
+    text-decoration: cornflowerblue underline;
+}
+
+nav {
+    color: white;
+    background-color: rgba(29, 28, 28, 0.842);
+}
+
+.education nav {
+    padding: 10px 0 10px 22px;
+}
+
+.box {
+    border: 5px solid lightgrey;
+    padding: 15px;
+}
+
+.education p {
+    margin-bottom: 5px;
+}
+
+#codingdojo {
+    font-size: 25px;
+}
+
+#dates_attended {
+    font-size: 18px;
+    color: grey;
+}
+
+.right nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.flexed {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#todd, #phil {
+    justify-content: space-between;
+}
+
+#todd, #adrien, #anne, #alayne {
+    margin-bottom: 10px;
+}
+
+.requests {
+    margin-bottom: 20px;
+}
+
+.view_more {
+    border-left: 5px solid lightgrey;
+    border-right: 5px solid lightgrey;
+    border-bottom: 5px solid lightgrey;
+    padding: 5px 0 5px 10px;
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+.circle_number {
+    background-color: lightgrey;
+    border-radius: 50%;
+    padding: 5px;
+}

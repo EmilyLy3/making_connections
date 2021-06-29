@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./making_connections.css">
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <header>
+        <div class="left_nav">
+            <div>
+                <p id="profile">Profile</p>
+            </div>
+            <div class="pages">
+                <p>Home</p>
+                <p id="my_profile">My Profiile</p>
+                <p>Find Connections</p>
+            </div>
+        </div>
+        <button id="out">Sign Out</button>
+    </header>
+    <main>
+        <div class="left">
+            <div class="user">
+                <div class="top_user">
+                    <img id="the_user" src="./images/jane-m.jpg" alt="Picture of Jane">
+                </div>
+                <div class="bottom_user">
+                    <h1 id="change_name">Jane Doe</h1>
+                    <div class="location">
+                        <img class="icon" src="./icons/map-marker.png" alt="Map marker icon">
+                        <p>Seattle</p>
+                    </div>
+                    <div class="info">
+                        <p>Developer l Engineer l Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <div class="footer">
+                        <img class="icon" src="./icons/gear.png" alt="Blue gear icon">
+                        <p onclick="change(changer)">edit profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <nav>Education</nav>
+                <div class="education_info, box">
+                    <p id="codingdojo">Coding Dojo - Full Stack Bootcamp</p>
+                    <p id="dates_attended">Dec 2019 - Mar 2020</p>
+                    <p>Triple black belt in Python, MERN, and C#</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="requests">
+                <nav>
+                    <button id="request_count" class="circle_number">2</button>
+                    <p>Connection Requests</p>
+                </nav>
+                <div class="box">
+                    <div class="flexed" id="todd">
+                        <div class="flexed">
+                            <img class="other_users" src="./images/todd-s.jpg" alt="Picture of Todd">
+                            <p>Todd E</p>
+                        </div>
+                        <div id="accept" class="flexed">
+                            <img onclick="removeT(todd); decrease(request_count); increase(connection_count)" src="./icons/accept-circle.png" alt="Accept checkmark">
+                            <img onclick="removeT(todd); decrease(request_count)" src="./icons/close-circle.png" alt="Deny x-mark">
+                        </div>
+                    </div>
+                    <div class="flexed" id="phil">
+                        <div class="flexed">
+                            <img class="other_users" src="./images/phil-s.jpg" alt="Picture of Phil">
+                            <p>Phil K</p>
+                        </div>
+                        <div id="accept2" class="flexed">
+                            <img onclick="removeP(phil); decrease(request_count); increase(connection_count)" src="./icons/accept-circle.png" alt="Accept checkmark">
+                            <img onclick="removeP(phil); decrease(request_count);" src="./icons/close-circle.png" alt="Deny x-mark">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connections">
+                <nav>
+                    <button id="connection_count" class="circle_number">418</button>
+                    <p>Your Connections</p>
+                </nav>
+                <div class="box">
+                    <div id="adrien" class="flexed">
+                        <img class="other_users" src="./images/adrien-s.jpg" alt="Picture of Adrien">
+                        <p>Adrien D</p>
+                    </div>
+                    <div id="anne" class="flexed">
+                        <img class="other_users" src="./images/anne-s.jpg" alt="Picture of Anne">
+                        <p>Anne J</p>
+                    </div>
+                    <div id="alayne" class="flexed">
+                        <img class="other_users" src="./images/alayne-s.jpg" alt="Picture of Alayne">
+                        <p>Alayne T</p>
+                    </div>
+                    <div id="arry" class="flexed">
+                        <img class="other_users" src="./images/arry-s.jpg" alt="Picutre of Arry">
+                        <p>Arry Y</p>
+                    </div>
+                </div>
+                <div class="view_more">View More</div>
+            </div>
+        </div>
+    </main>
+    <script src="./making_connections.js"></script>
+</body>
+
+</html>
